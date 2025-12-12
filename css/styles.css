@@ -1,0 +1,3 @@
+/* Small custom styles for MaxwellFoods site */
+html, body { height: 100%; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

@@ -1,0 +1,136 @@
+<!-- <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center gap-3">
+                <div class="text-emerald-600 font-bold text-xl">MaxwellFoods</div>
+            </div>
+            <nav class="hidden sm:flex gap-6 items-center">
+                <a href="#Home" class="text-slate-700 hover:text-emerald-600">Home</a>
+                <a href="#about" class="text-slate-700 hover:text-emerald-600">About</a>
+
+                <div class="relative group">
+                    <button class="text-slate-700 hover:text-emerald-600 inline-flex items-center gap-2">
+                        Product
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow p-2 hidden group-hover:block">
+                        <a href="#hulled-sesame" class="block py-1 px-2 text-slate-700 hover:text-emerald-600">Hulled
+                            Sesame Seeds</a>
+                        <a href="#natural-sesame" class="block py-1 px-2 text-slate-700 hover:text-emerald-600">Natural
+                            Sesame Seeds</a>
+                        <a href="#black-sesame" class="block py-1 px-2 text-slate-700 hover:text-emerald-600">Black
+                            Sesame Seeds</a>
+                    </div>
+                </div>
+                <a href="#Certificates" class="text-slate-700 hover:text-emerald-600">Certificates</a>
+                <a href="#contact" class="text-slate-700 hover:text-emerald-600">Contact</a>
+            </nav>
+            <div class="sm:hidden">
+                <details class="relative">
+                    <summary class="list-none cursor-pointer p-2 rounded-md border">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </summary>
+                    <div class="absolute right-0 mt-2 w-48 bg-white border rounded shadow p-3">
+                        <a href="#about" class="block py-2 text-sm">About</a>
+                        <a href="#menu" class="block py-2 text-sm">Menu</a>
+                        <a href="#contact" class="block py-2 text-sm">Contact</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</header> -->
+<header class="sticky top-0 z-50 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="bg-emerald-600 p-2 rounded-lg">
+                    <span class="text-white font-bold">MF</span>
+                </div>
+                <span class="font-bold text-lg text-slate-900">MaxwellFoods</span>
+            </div>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8 items-center">
+                <a href="#home" class="text-slate-700 hover:text-emerald-600 transition">Home</a>
+                <a href="#about" class="text-slate-700 hover:text-emerald-600 transition">About</a>
+                <div class="relative group">
+                    <button class="text-slate-700 hover:text-emerald-600 transition flex items-center gap-1">
+                        Products
+                        <svg class="h-4 w-4 group-hover:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-56 bg-white border border-slate-200 rounded-lg shadow-lg p-3 hidden group-hover:block">
+                        <a href="#hulled" class="block px-3 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Hulled Sesame Seeds</a>
+                        <a href="#natural" class="block px-3 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Natural Sesame Seeds</a>
+                        <a href="#black" class="block px-3 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Black Sesame Seeds</a>
+                    </div>
+                </div>
+                <a href="#certificates" class="text-slate-700 hover:text-emerald-600 transition">Certificates</a>
+                <a href="#contact" class="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#home" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Home</a>
+                <a href="#about" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">About</a>
+                <button id="products-toggle" class="w-full text-left py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition flex justify-between items-center">
+                    Products
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="products-submenu" class="hidden pl-4 space-y-2">
+                    <a href="#hulled" class="block py-2 px-3 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Hulled Sesame Seeds</a>
+                    <a href="#natural" class="block py-2 px-3 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Natural Sesame Seeds</a>
+                    <a href="#black" class="block py-2 px-3 text-sm text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Black Sesame Seeds</a>
+                </div>
+                <a href="#certificates" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Certificates</a>
+                <a href="#contact" class="block py-2 px-3 bg-emerald-600 text-white rounded hover:bg-emerald-700 transition">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const productsToggle = document.getElementById('products-toggle');
+    const productsSubmenu = document.getElementById('products-submenu');
+    
+    // Toggle mobile menu
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Toggle products submenu
+    productsToggle.addEventListener('click', () => {
+        productsSubmenu.classList.toggle('hidden');
+    });
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            productsSubmenu.classList.add('hidden');
+        });
+    });
+</script>
