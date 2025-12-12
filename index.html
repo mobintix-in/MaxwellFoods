@@ -90,44 +90,6 @@
 			}
 			loadComponent('navbar', 'components/navbar.html');
 			loadComponent('footer', 'components/footer.html');
-			
-			// Initialize navbar mobile menu functionality
-			function initNavbar() {
-				const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-				const mobileMenu = document.getElementById('mobile-menu');
-				const productsToggle = document.getElementById('products-toggle');
-				const productsSubmenu = document.getElementById('products-submenu');
-				
-				if (!mobileMenuBtn || !mobileMenu) return;
-				
-				// Toggle mobile menu
-				mobileMenuBtn.addEventListener('click', () => {
-					mobileMenu.classList.toggle('hidden');
-				});
-				
-				// Toggle products submenu
-				if (productsToggle) {
-					productsToggle.addEventListener('click', () => {
-						productsSubmenu.classList.toggle('hidden');
-					});
-				}
-				
-				// Close menu when a link is clicked
-				document.querySelectorAll('#mobile-menu a').forEach(link => {
-					link.addEventListener('click', () => {
-						mobileMenu.classList.add('hidden');
-						if (productsSubmenu) productsSubmenu.classList.add('hidden');
-					});
-				});
-			}
-			
-			// Wait for navbar to load, then initialize
-			const checkNavbar = setInterval(() => {
-				if (document.getElementById('mobile-menu-btn')) {
-					initNavbar();
-					clearInterval(checkNavbar);
-				}
-			}, 100);
 		</script>
 	</body>
 </html>
