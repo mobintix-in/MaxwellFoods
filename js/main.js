@@ -8,5 +8,5 @@ async function loadComponent(id, path) {
     console.warn("Failed to load", path, e);
   }
 }
-loadComponent("navbar", "components/navbar.html");
-loadComponent("footer", "components/footer.html");
+loadComponent("navbar", "../components/navbar.html");
+loadComponent("footer", "../components/footer.html");
