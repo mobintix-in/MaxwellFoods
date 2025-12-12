@@ -109,28 +109,3 @@
         </div>
     </div>
 </header>
-
-<script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const productsToggle = document.getElementById('products-toggle');
-    const productsSubmenu = document.getElementById('products-submenu');
-    
-    // Toggle mobile menu
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-    
-    // Toggle products submenu
-    productsToggle.addEventListener('click', () => {
-        productsSubmenu.classList.toggle('hidden');
-    });
-    
-    // Close menu when a link is clicked
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            productsSubmenu.classList.add('hidden');
-        });
-    });
-</script>
