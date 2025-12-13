@@ -6,31 +6,34 @@
                 <div class="bg-emerald-600 p-2 rounded-lg">
                     <i class="fas fa-utensils text-white text-xl"></i>
                 </div>
-                <a href="./index.html" class="font-bold text-xl text-slate-900 hover:text-emerald-600 transition">MaxwellFoods</a>
+                <a href="../index.html" class="font-bold text-xl text-slate-900 hover:text-emerald-600 transition">MaxwellFoods</a>
             </div>
             
             <!-- Desktop Nav -->
             <nav class="hidden md:flex gap-8 items-center">
-                <a href="./index.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">Home</a>
-                <a href="./about.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">About</a>
+                <a href="../index.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">Home</a>
+                <a href="../about.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">About</a>
                 
-                <!-- Desktop Dropdown -->
+                <!-- Desktop Dropdown - FIXED VERSION -->
                 <div class="relative group">
-                    <button class="text-slate-700 hover:text-emerald-600 transition font-medium flex items-center gap-1">
+                    <button class="text-slate-700 hover:text-emerald-600 transition font-medium flex items-center gap-1 py-2">
                         Products
                         <svg class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <div class="absolute left-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg p-2 hidden group-hover:block">
-                        <a href="../Products/Hulled Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Hulled Sesame Seeds</a>
-                        <a href="../Products/Natural Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Natural Sesame Seeds</a>
-                        <a href="../Products/Black Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Black Sesame Seeds</a>
+                    <!-- Dropdown with no gap - added pt-0 and -mt-0 to eliminate space -->
+                    <div class="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-white border border-slate-200 rounded-lg shadow-lg p-2">
+                            <a href="../Products/Hulled Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Hulled Sesame Seeds</a>
+                            <a href="../Products/Natural Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Natural Sesame Seeds</a>
+                            <a href="../Products/Black Sesame Seeds.html" class="block px-4 py-2 rounded hover:bg-emerald-50 text-slate-700 hover:text-emerald-600 transition">Black Sesame Seeds</a>
+                        </div>
                     </div>
                 </div>
                 
-                <a href="./certificates.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">Certificates</a>
-                <a href="./contact.html" class="px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-semibold shadow-sm">Contact</a>
+                <a href="../certificates.html" class="text-slate-700 hover:text-emerald-600 transition font-medium">Certificates</a>
+                <a href="../contact.html" class="px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition font-semibold shadow-sm">Contact</a>
             </nav>
             
             <!-- Mobile Menu Toggle Button -->
@@ -44,8 +47,8 @@
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 pb-4">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="./index.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Home</a>
-                <a href="./about.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">About</a>
+                <a href="../index.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Home</a>
+                <a href="../about.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">About</a>
                 
                 <!-- Mobile Products Toggle -->
                 <button id="products-toggle" class="w-full text-left py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition flex justify-between items-center">
@@ -57,13 +60,13 @@
                 
                 <!-- Mobile Products Submenu -->
                 <div id="products-submenu" class="hidden pl-6 space-y-1">
-                    <a href="./Products/Hulled Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Hulled Sesame Seeds</a>
-                    <a href="./Products/Natural Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Natural Sesame Seeds</a>
-                    <a href="./Products/Black Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Black Sesame Seeds</a>
+                    <a href="../Products/Hulled Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Hulled Sesame Seeds</a>
+                    <a href="../Products/Natural Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Natural Sesame Seeds</a>
+                    <a href="../Products/Black Sesame Seeds.html" class="block py-2 px-3 text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Black Sesame Seeds</a>
                 </div>
                 
-                <a href="./certificates.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Certificates</a>
-                <a href="./contact.html" class="block py-2 px-3 mt-2 bg-emerald-600 text-white text-center rounded-lg hover:bg-emerald-700 transition font-semibold">Contact</a>
+                <a href="../certificates.html" class="block py-2 px-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 rounded transition">Certificates</a>
+                <a href="../contact.html" class="block py-2 px-3 mt-2 bg-emerald-600 text-white text-center rounded-lg hover:bg-emerald-700 transition font-semibold">Contact</a>
             </div>
         </div>
     </div>

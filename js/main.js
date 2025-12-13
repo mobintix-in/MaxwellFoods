@@ -21,12 +21,13 @@ async function initComponents() {
   await loadComponent("navbar", "../components/navbar.html");
   await loadComponent("footer", "../components/footer.html");
 
-  // After navbar is loaded, attach mobile menu toggle
+  // After navbar is loaded, attach event listeners
   initMobileMenu();
   initProductsDropdown();
+  initDesktopDropdown(); // NEW
 }
 
-// Mobile menu toggle functionality
+// Mobile menu toggle
 function initMobileMenu() {
   const navToggle = document.getElementById("nav-toggle");
   const navIcon = document.getElementById("nav-toggle-icon");
@@ -36,7 +37,6 @@ function initMobileMenu() {
     navToggle.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
 
-      // Toggle hamburger icon (bars to X)
       if (mobileMenu.classList.contains("hidden")) {
         navIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
       } else {
@@ -44,7 +44,6 @@ function initMobileMenu() {
       }
     });
 
-    // Close mobile menu when clicking on a link
     const mobileLinks = mobileMenu.querySelectorAll("a");
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
@@ -52,12 +51,10 @@ function initMobileMenu() {
         navIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
       });
     });
-  } else {
-    console.warn("Mobile menu elements not found");
   }
 }
 
-// Products dropdown toggle for mobile
+// Mobile products dropdown
 function initProductsDropdown() {
   const productsToggle = document.getElementById("products-toggle");
   const productsSubmenu = document.getElementById("products-submenu");
@@ -67,12 +64,32 @@ function initProductsDropdown() {
     productsToggle.addEventListener("click", () => {
       productsSubmenu.classList.toggle("hidden");
       
-      // Rotate icon
       if (productsSubmenu.classList.contains("hidden")) {
         productsIcon.style.transform = "rotate(0deg)";
       } else {
         productsIcon.style.transform = "rotate(180deg)";
       }
+    });
+  }
+}
+
+// Desktop products dropdown (NEW FUNCTION)
+function initDesktopDropdown() {
+  const dropdown = document.getElementById("products-dropdown");
+  const menu = document.getElementById("products-menu-desktop");
+  const arrow = document.getElementById("products-arrow");
+
+  if (dropdown && menu) {
+    // Show dropdown on mouse enter
+    dropdown.addEventListener("mouseenter", () => {
+      menu.classList.remove("hidden");
+      if (arrow) arrow.style.transform = "rotate(180deg)";
+    });
+
+    // Hide dropdown on mouse leave
+    dropdown.addEventListener("mouseleave", () => {
+      menu.classList.add("hidden");
+      if (arrow) arrow.style.transform = "rotate(0deg)";
     });
   }
 }
