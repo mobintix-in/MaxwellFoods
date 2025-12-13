@@ -18,8 +18,8 @@ async function loadComponent(id, path) {
 
 // Initialize navbar and footer
 async function initComponents() {
-  await loadComponent("navbar", "./components/navbar.html");
-  await loadComponent("footer", "./components/footer.html");
+  await loadComponent("navbar", "../components/navbar.html");
+  await loadComponent("footer", "../components/footer.html");
 
   // After navbar is loaded, attach mobile menu toggle
   initMobileMenu();
