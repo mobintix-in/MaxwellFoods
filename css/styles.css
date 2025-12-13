@@ -4,16 +4,58 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
+/* Hero Section */
+.hero-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Product Cards */
+.product-card {
+    transition: all 0.3s ease;
+    border-top: 4px solid #10b981;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Feature Icons */
+.feature-icon {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+}
+
+/* Certificate Badge */
+.certificate-badge {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
-.page-header {
-    background: linear-gradient(rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-    background-size: cover;
-    background-position: center;
+/* Testimonial Cards */
+.testimonial-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    transition: all 0.3s ease;
 }
 
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Cards */
+.stat-card {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* Certificate Cards */
 .certificate-card {
     transition: all 0.3s ease;
     border-top: 4px solid #10b981;
@@ -40,48 +82,33 @@ body {
     background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
 }
 
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-.hero-gradient {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+/* Page Headers */
+.page-header {
+    background: linear-gradient(rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)), 
+                url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
-.product-card {
-    transition: all 0.3s ease;
-    border-top: 4px solid #10b981;
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.certificate-badge {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
-.feature-icon {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 5px;
 }
 
-.testimonial-card {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-}
-
-.map-container {
-    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-}
-
-.stat-card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+::-webkit-scrollbar-thumb:hover {
+    background: #059669;
 }
