@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Our Premium Products | MaxwellFoods - Gourmet Prepared Meals & Catering</title>
+    <meta name="title" content="MaxwellFoods Products | Premium Prepared Meals & Catering Services">
+    <meta name="description"
+        content="Explore MaxwellFoods' premium food solutions: Gourmet Prepared Meals, Event Catering, and Weekly Meal Plans. Chef-crafted, fresh, and delivered to your door." />
+    <meta name="keywords" content="prepared meals, meal delivery, catering services, weekly meal plans, corporate catering, family meals, healthy meal delivery, chef-crafted food, meal prep service, San Francisco catering">
+    <meta name="author" content="MaxwellFoods">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.maxwellfoods.com/products.html" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.maxwellfoods.com/products.html" />
+    <meta property="og:title" content="MaxwellFoods Products | Premium Prepared Meals & Catering Services" />
+    <meta property="og:description"
+        content="Explore MaxwellFoods' premium food solutions: Gourmet Prepared Meals, Event Catering, and Weekly Meal Plans." />
+    <meta property="og:image" content="https://www.maxwellfoods.com/images/products-banner.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MaxwellFoods Premium Products Collection" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.maxwellfoods.com/products.html" />
+    <meta property="twitter:title" content="MaxwellFoods Products | Premium Prepared Meals & Catering Services" />
+    <meta property="twitter:description"
+        content="Explore MaxwellFoods' premium food solutions: Gourmet Prepared Meals, Event Catering, and Weekly Meal Plans." />
+    <meta property="twitter:image" content="https://www.maxwellfoods.com/images/products-twitter.jpg" />
+    
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    
+    <!-- Stylesheets & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    
+    <!-- JSON-LD Structured Data for Product Collection -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "MaxwellFoods Products",
+        "description": "Collection of premium prepared meals and catering services",
+        "url": "https://www.maxwellfoods.com/products.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Gourmet Prepared Meals",
+                        "description": "Chef-prepared meals ready to heat and eat",
+                        "url": "https://www.maxwellfoods.com/product-prepared-meals.html",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "12.99",
+                            "priceCurrency": "USD"
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Service",
+                        "name": "Event Catering",
+                        "description": "Professional catering for events and gatherings",
+                        "url": "https://www.maxwellfoods.com/product-catering.html"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Weekly Meal Plans",
+                        "description": "Customized meal plans delivered weekly",
+                        "url": "https://www.maxwellfoods.com/product-meal-plans.html",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "89.99",
+                            "priceCurrency": "USD"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-feature-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid #10b981;
+        }
+        
+        .product-feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .benefit-badge {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+        
+        .category-tab {
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .category-tab.active {
+            border-bottom: 3px solid #10b981;
+            color: #10b981;
+        }
+        
+        .testimonial-highlight {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800" itemscope itemtype="https://schema.org/WebPage">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <div id="navbar" role="navigation" aria-label="Main Navigation"></div>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Page Header with Breadcrumb -->
+        <section class="page-header text-white py-16" role="banner">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <nav class="flex mb-4" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="./index.html" class="inline-flex items-center text-sm text-emerald-100 hover:text-white transition">
+                                <i class="fas fa-home mr-2" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                                <i class="fas fa-chevron-right text-emerald-200 mx-2" aria-hidden="true"></i>
+                                <span class="ml-1 text-sm font-medium text-white md:ml-2">Our Products</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="md:w-2/3">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4" itemprop="headline">Our Premium Food Solutions</h1>
+                        <p class="text-xl text-emerald-100 max-w-3xl">
+                            Discover our range of chef-crafted food services designed to simplify your life and delight your taste buds
+                        </p>
+                    </div>
+                    
+                    <!-- Quick Stats -->
+                    <div class="mt-6 md:mt-0 flex items-center bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold mb-2">3</div>
+                            <p class="text-sm text-emerald-100">Premium Services</p>
+                        </div>
+                        <div class="mx-6 h-12 w-px bg-white/40"></div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold mb-2">50+</div>
+                            <p class="text-sm text-emerald-100">Menu Options</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Tabs -->
+        <section class="py-8 bg-white border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                    <button class="category-tab active px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
+                            data-category="all">
+                        <i class="fas fa-th-large mr-2" aria-hidden="true"></i> All Products
+                    </button>
+                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
+                            data-category="meals">
+                        <i class="fas fa-utensils mr-2" aria-hidden="true"></i> Prepared Meals
+                    </button>
+                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
+                            data-category="catering">
+                        <i class="fas fa-glass-cheers mr-2" aria-hidden="true"></i> Event Catering
+                    </button>
+                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
+                            data-category="plans">
+                        <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Meal Plans
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Products Grid -->
+        <section class="py-16 bg-gray-50" aria-labelledby="products-grid-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="products-grid-heading" class="sr-only">Our Product Collection</h2>
+                
+                <!-- Product 1: Gourmet Prepared Meals -->
+                <article class="product-feature-card bg-white rounded-2xl shadow-lg overflow-hidden mb-12" 
+                         itemscope itemtype="https://schema.org/Product" data-category="meals">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Product Image -->
+                        <div class="lg:order-2">
+                            <div class="h-full min-h-96 relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                     alt="Gourmet prepared meals with fresh vegetables and protein"
+                                     class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                                     itemprop="image"
+                                     loading="lazy">
+                                <!-- Badge -->
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                                        <i class="fas fa-fire mr-1" aria-hidden="true"></i> Most Popular
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Content -->
+                        <div class="p-8 lg:p-12 flex flex-col justify-center">
+                            <div class="mb-4">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800">
+                                    <i class="fas fa-clock mr-2" aria-hidden="true"></i> Ready in 5 Minutes
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-3xl font-bold text-gray-900 mb-4" itemprop="name">
+                                Gourmet Prepared Meals
+                            </h3>
+                            
+                            <p class="text-gray-600 mb-6 text-lg" itemprop="description">
+                                Restaurant-quality meals prepared by our chefs, ready to heat and eat. Perfect for busy professionals and families who want healthy, delicious food without the cooking time.
+                            </p>
+                            
+                            <!-- Key Features -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Fresh ingredients, never frozen</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Nutritionally balanced</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Variety of dietary options</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Microwave-safe packaging</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing & CTA -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                                <div>
+                                    <div class="text-2xl font-bold text-emerald-700 mb-1" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        Starting at <span itemprop="price" content="12.99">$12.99</span>/meal
+                                    </div>
+                                    <p class="text-sm text-gray-500">Minimum order: 5 meals</p>
+                                </div>
+                                
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <a href="Products/Black Sesame Seeds.html"
+                                       class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Learn more about Gourmet Prepared Meals">
+                                        Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="contact.html"
+                                       class="bg-white border border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Order Gourmet Prepared Meals">
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2: Event Catering -->
+                <article class="product-feature-card bg-white rounded-2xl shadow-lg overflow-hidden mb-12"
+                         itemscope itemtype="https://schema.org/Service" data-category="catering">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Product Content -->
+                        <div class="p-8 lg:p-12 flex flex-col justify-center">
+                            <div class="mb-4">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                    <i class="fas fa-users mr-2" aria-hidden="true"></i> For Events 10-500+ People
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-3xl font-bold text-gray-900 mb-4" itemprop="name">
+                                Event Catering
+                            </h3>
+                            
+                            <p class="text-gray-600 mb-6 text-lg" itemprop="description">
+                                Professional catering for corporate events, weddings, parties, and special occasions. Custom menus, expert service, and attention to detail that makes your event memorable.
+                            </p>
+                            
+                            <!-- Event Types -->
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-900 mb-3">Perfect For:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Corporate Events</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Weddings</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Birthday Parties</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Family Gatherings</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Holiday Parties</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Service Features -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Custom menu creation</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Professional serving staff</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Setup & cleanup included</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Rentals coordination</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing & CTA -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                                <div>
+                                    <div class="text-2xl font-bold text-emerald-700 mb-1">
+                                        Custom Pricing
+                                    </div>
+                                    <p class="text-sm text-gray-500">Free consultation & quote</p>
+                                </div>
+                                
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <a href="Products/Hulled Sesame Seeds.html"
+                                       class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Learn more about Event Catering">
+                                        Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="contact.html"
+                                       class="bg-white border border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Request catering quote">
+                                        Get Quote
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Image -->
+                        <div class="lg:order-1">
+                            <div class="h-full min-h-96 relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                     alt="Elegant event catering setup with various dishes"
+                                     class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                                     itemprop="image"
+                                     loading="lazy">
+                                <!-- Badge -->
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                                        <i class="fas fa-award mr-1" aria-hidden="true"></i> Award Winning
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3: Weekly Meal Plans -->
+                <article class="product-feature-card bg-white rounded-2xl shadow-lg overflow-hidden"
+                         itemscope itemtype="https://schema.org/Product" data-category="plans">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Product Image -->
+                        <div class="lg:order-2">
+                            <div class="h-full min-h-96 relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                     alt="Weekly meal plan with organized food containers"
+                                     class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                                     itemprop="image"
+                                     loading="lazy">
+                                <!-- Badge -->
+                                <div class="absolute top-4 left-4">
+                                    <span class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                                        <i class="fas fa-heart mr-1" aria-hidden="true"></i> Health Focused
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Product Content -->
+                        <div class="p-8 lg:p-12 flex flex-col justify-center">
+                            <div class="mb-4">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800">
+                                    <i class="fas fa-chart-line mr-2" aria-hidden="true"></i> Customized Nutrition
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-3xl font-bold text-gray-900 mb-4" itemprop="name">
+                                Weekly Meal Plans
+                            </h3>
+                            
+                            <p class="text-gray-600 mb-6 text-lg" itemprop="description">
+                                Customized meal plans tailored to your dietary preferences, health goals, and lifestyle. Fresh, balanced meals delivered weekly to support your wellness journey.
+                            </p>
+                            
+                            <!-- Diet Options -->
+                            <div class="mb-8">
+                                <h4 class="font-bold text-gray-900 mb-3">Available Plans:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">High Protein</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Low Carb</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Vegetarian</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Vegan</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Gluten-Free</span>
+                                    <span class="benefit-badge px-3 py-1.5 rounded-full text-sm text-gray-700">Keto</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Plan Features -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Personalized nutrition</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Weekly delivery</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Flexible scheduling</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3" aria-hidden="true"></i>
+                                    <span class="text-gray-700">Nutritionist support</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing & CTA -->
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                                <div>
+                                    <div class="text-2xl font-bold text-emerald-700 mb-1" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                        Starting at <span itemprop="price" content="89.99">$89.99</span>/week
+                                    </div>
+                                    <p class="text-sm text-gray-500">10+ meals per week</p>
+                                </div>
+                                
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <a href="Products/Natural Sesame Seeds.html"
+                                       class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Learn more about Weekly Meal Plans">
+                                        Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="contact.html"
+                                       class="bg-white border border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-6 py-3 rounded-lg font-semibold text-center transition focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                                       aria-label="Start weekly meal plan">
+                                        Start Plan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="py-16 bg-white" aria-labelledby="comparison-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 id="comparison-heading" class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Compare Our Services</h2>
+                    <p class="text-gray-600 text-lg max-w-2xl mx-auto">Find the perfect solution for your needs</p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full comparison-table rounded-xl overflow-hidden" role="table">
+                        <thead>
+                            <tr class="bg-emerald-600 text-white">
+                                <th class="py-4 px-6 text-left font-bold">Features</th>
+                                <th class="py-4 px-6 text-center font-bold">Prepared Meals</th>
+                                <th class="py-4 px-6 text-center font-bold">Event Catering</th>
+                                <th class="py-4 px-6 text-center font-bold">Meal Plans</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Best For</td>
+                                <td class="py-4 px-6 text-center">Busy individuals & families</td>
+                                <td class="py-4 px-6 text-center">Events & gatherings</td>
+                                <td class="py-4 px-6 text-center">Health & fitness goals</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Delivery Frequency</td>
+                                <td class="py-4 px-6 text-center">Daily/Weekly</td>
+                                <td class="py-4 px-6 text-center">One-time event</td>
+                                <td class="py-4 px-6 text-center">Weekly</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Customization</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-emerald-600"></i> Menu selection</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-emerald-600"></i> Full custom menu</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-emerald-600"></i> Personalized nutrition</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Minimum Order</td>
+                                <td class="py-4 px-6 text-center">5 meals</td>
+                                <td class="py-4 px-6 text-center">10 people</td>
+                                <td class="py-4 px-6 text-center">1 week</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Setup Required</td>
+                                <td class="py-4 px-6 text-center">None</td>
+                                <td class="py-4 px-6 text-center">Full service</td>
+                                <td class="py-4 px-6 text-center">Initial consultation</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-4 px-6 font-medium">Starting Price</td>
+                                <td class="py-4 px-6 text-center font-bold text-emerald-700">$12.99/meal</td>
+                                <td class="py-4 px-6 text-center font-bold text-emerald-700">$25/person</td>
+                                <td class="py-4 px-6 text-center font-bold text-emerald-700">$89.99/week</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Highlight -->
+        <section class="py-16 bg-gray-50" aria-labelledby="testimonial-heading">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="testimonial-highlight rounded-2xl p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/4 text-center">
+                            <div class="w-24 h-24 mx-auto bg-emerald-200 rounded-full flex items-center justify-center text-emerald-800 font-bold text-2xl mb-4">
+                                JR
+                            </div>
+                            <h4 class="font-bold text-gray-900">James Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Corporate Client</p>
+                            <div class="flex justify-center text-yellow-400 mt-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-3/4">
+                            <blockquote class="text-gray-800 text-xl italic mb-6">
+                                "We've used MaxwellFoods for both weekly office lunches and our annual company picnic. The quality is consistently exceptional, and their team is incredibly professional. They've become an essential part of our company culture."
+                            </blockquote>
+                            <div class="flex items-center">
+                                <i class="fas fa-building text-emerald-600 text-2xl mr-4" aria-hidden="true"></i>
+                                <div>
+                                    <p class="font-bold text-gray-900">TechVision Inc.</p>
+                                    <p class="text-gray-600 text-sm">200+ employees, San Francisco</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-gradient-to-r from-emerald-600 to-green-600 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience MaxwellFoods?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers enjoying chef-crafted meals and exceptional service.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contact.html"
+                       class="bg-white text-emerald-700 hover:bg-emerald-50 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
+                       aria-label="Contact us to get started">
+                        <i class="fas fa-comments mr-2" aria-hidden="true"></i> Get Personalized Quote
+                    </a>
+                    <a href="tel:5551234567"
+                       class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold text-lg transition focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
+                       aria-label="Call us now">
+                        <i class="fas fa-phone-alt mr-2" aria-hidden="true"></i> Call: (555) 123-4567
+                    </a>
+                </div>
+                <p class="mt-8 text-emerald-100">
+                    <i class="fas fa-clock mr-2" aria-hidden="true"></i> Consultation available Mon-Fri: 8am-8pm
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <div id="footer" role="contentinfo"></div>
+    
+    <!-- Main JavaScript -->
+    <script src="./js/main.js"></script>
+    
+    <!-- Products Page Specific JavaScript -->
+    <script>
+        // Category filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all category tabs and product cards
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const productCards = document.querySelectorAll('[data-category]');
+            
+            // Add click event to each tab
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active tab
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            // Add fade-in animation
+                            card.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Update URL hash for bookmarking
+                    window.location.hash = category === 'all' ? 'products' : `products-${category}`;
+                });
+            });
+            
+            // Check URL hash on load
+            const hash = window.location.hash.substring(1);
+            if (hash.startsWith('products-')) {
+                const category = hash.replace('products-', '');
+                const correspondingTab = document.querySelector(`[data-category="${category}"]`);
+                if (correspondingTab) {
+                    correspondingTab.click();
+                }
+            }
+            
+            // Add CSS animation for fadeIn
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Smooth scroll for anchor links within page
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add structured data for breadcrumb
+            const breadcrumbSchema = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": window.location.origin
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Products",
+                        "item": window.location.href
+                    }
+                ]
+            };
+            
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(breadcrumbSchema);
+            document.head.appendChild(script);
+        });
+    </script>
+</body>
+
+</html>
