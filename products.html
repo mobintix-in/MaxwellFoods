@@ -206,30 +206,6 @@
             </div>
         </section>
 
-        <!-- Category Tabs -->
-        <!-- <section class="py-8 bg-white border-b border-gray-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
-                    <button class="category-tab active px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
-                            data-category="all">
-                        <i class="fas fa-th-large mr-2" aria-hidden="true"></i> All Products
-                    </button>
-                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
-                            data-category="meals">
-                        <i class="fas fa-utensils mr-2" aria-hidden="true"></i> Prepared Meals
-                    </button>
-                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
-                            data-category="catering">
-                        <i class="fas fa-glass-cheers mr-2" aria-hidden="true"></i> Event Catering
-                    </button>
-                    <button class="category-tab px-4 py-3 text-lg font-medium text-gray-700 hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 rounded-lg"
-                            data-category="plans">
-                        <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Meal Plans
-                    </button>
-                </div>
-            </div>
-        </section> -->
-
         <!-- Main Products Grid -->
         <section class="py-16 bg-gray-50" aria-labelledby="products-grid-heading">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -565,104 +541,6 @@
 
     <!-- Main JavaScript -->
     <script src="./js/main.js"></script>
-
-    <!-- Products Page Specific JavaScript -->
-    <!-- <script>
-        // Category filtering functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get all category tabs and product cards
-            const categoryTabs = document.querySelectorAll('.category-tab');
-            const productCards = document.querySelectorAll('[data-category]');
-            
-            // Add click event to each tab
-            categoryTabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const category = this.getAttribute('data-category');
-                    
-                    // Update active tab
-                    categoryTabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Filter products
-                    productCards.forEach(card => {
-                        if (category === 'all' || card.getAttribute('data-category') === category) {
-                            card.style.display = 'block';
-                            // Add fade-in animation
-                            card.style.animation = 'fadeIn 0.5s ease';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                    
-                    // Update URL hash for bookmarking
-                    window.location.hash = category === 'all' ? 'products' : `products-${category}`;
-                });
-            });
-            
-            // Check URL hash on load
-            const hash = window.location.hash.substring(1);
-            if (hash.startsWith('products-')) {
-                const category = hash.replace('products-', '');
-                const correspondingTab = document.querySelector(`[data-category="${category}"]`);
-                if (correspondingTab) {
-                    correspondingTab.click();
-                }
-            }
-            
-            // Add CSS animation for fadeIn
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes fadeIn {
-                    from { opacity: 0; transform: translateY(10px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-            `;
-            document.head.appendChild(style);
-            
-            // Smooth scroll for anchor links within page
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    if (this.getAttribute('href') === '#') return;
-                    
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    
-                    if (targetElement) {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Add structured data for breadcrumb
-            const breadcrumbSchema = {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": window.location.origin
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Products",
-                        "item": window.location.href
-                    }
-                ]
-            };
-            
-            const script = document.createElement('script');
-            script.type = 'application/ld+json';
-            script.textContent = JSON.stringify(breadcrumbSchema);
-            document.head.appendChild(script);
-        });
-    </script> -->
 </body>
 
 </html>
