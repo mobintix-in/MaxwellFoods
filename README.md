@@ -1,0 +1,11 @@
+# MaxwellFoods Website
+
+Simple static site built with HTML and Tailwind CSS (via CDN).
+
+To view the site, open `index.html` in your browser. The navbar and footer are loaded from `components/`.
+
+Files added:
+- `index.html` — main landing page
+- `components/navbar.html` — header
+- `components/footer.html` — footer
+- `css/styles.css` — small custom styles
